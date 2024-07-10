@@ -1,0 +1,10 @@
+service: "service.py:Svc"
+labels:
+  owner: shohelrana
+  project: stock-prediction
+include:
+  - "service.py"
+  - "common"
+python:
+  requirements_txt: "./requirements.txt"
+  lock_packages: false
